@@ -36,9 +36,9 @@ export default function GuidesPage() {
         </div>
 
         {/* Container 1 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {/* Guide Card 1: Nutrition */}
-          <div className="bg-white rounded-[2rem] overflow-hidden border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
+          <div className="bg-white rounded-[2rem] overflow-hidden border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col ">
             {/* Image Placeholder */}
             <div className="h-52 bg-orange-100 relative overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform">
@@ -48,7 +48,7 @@ export default function GuidesPage() {
 
             {/* Text Content */}
             <div className="p-8 ">
-              <span className="text-orange-600 text-xs font-bold uppercase tracking-widest">
+              <span className="text-orange-600 text-xs font-bold uppercase tracking-widest flex-1 flex flex-col">
                 Nutrition
               </span>
               <h3 className="text-2xl font-bold text-stone-900 mt-2 mb-3">
@@ -59,7 +59,7 @@ export default function GuidesPage() {
               </p>
               <Link
                 href="/catWellness#nutrition"
-                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all "
+                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all mt-auto "
               >
                 Read Guide{" "}
                 <MoveRight size={15} className="text-orange-500 mt-1" />
@@ -70,7 +70,7 @@ export default function GuidesPage() {
           {/* Container 2 */}
 
           {/* Guide Card 1: Training*/}
-          <div className="bg-white rounded-[2rem] overflow-hidden border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
+          <div className="bg-white rounded-[2rem] overflow-hidden border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
             {/* Image Placeholder */}
             <div className="h-52 bg-orange-100 relative overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform">
@@ -79,7 +79,7 @@ export default function GuidesPage() {
             </div>
 
             {/* Text Content */}
-            <div className="p-8 ">
+            <div className="p-8  flex-1 flex flex-col">
               <span className="text-blue-500 text-xs font-bold uppercase tracking-widest">
                 Training
               </span>
@@ -92,7 +92,7 @@ export default function GuidesPage() {
               
               <Link
                 href="/catWellness#training"
-                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all "
+                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all mt-auto"
               >
                 Read Guide{" "}
                 <MoveRight size={15} className="text-orange-500 mt-1" />
@@ -103,7 +103,7 @@ export default function GuidesPage() {
           {/* Container 3 */}
 
           {/* Guide Card 1: Vaccinations */}
-          <div className="bg-white rounded-[2rem] overflow-hidden border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
+          <div className="bg-white rounded-[2rem] overflow-hidden border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
             {/* Image Placeholder */}
             <div className="h-52 bg-orange-100 relative overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform">
@@ -112,7 +112,7 @@ export default function GuidesPage() {
             </div>
 
             {/* Text Content */}
-            <div className="p-8">
+            <div className="p-8 flex-1 flex flex-col">
               <span className="text-pink-500 text-xs font-bold uppercase tracking-widest">
                 Vaccination
               </span>
@@ -124,7 +124,7 @@ export default function GuidesPage() {
               </p>
               <Link
                 href="/catWellness#vaccination"
-                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all"
+                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all mt-auto"
               >
                 Read Guide{" "}
                 <MoveRight size={15} className="text-orange-500 mt-1" />
@@ -137,7 +137,7 @@ export default function GuidesPage() {
           {/* Container 1 */}
 
           {/* Guide Card 1: Nutrition */}
-          <div className="bg-white rounded-[2rem] overflow-hidden border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
+          <div className="bg-white rounded-[2rem] overflow-hidden border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
             {/* Image Placeholder */}
             <div className="h-52 bg-orange-100 relative overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform">
@@ -146,7 +146,7 @@ export default function GuidesPage() {
             </div>
 
             {/* Text Content */}
-            <div className="p-8">
+            <div className="p-8 flex-1 flex flex-col">
               <span className="text-orange-600 text-xs font-bold uppercase tracking-widest">
                 Nutrition
               </span>
@@ -158,7 +158,7 @@ export default function GuidesPage() {
               </p>
               <Link
                 href="/dogWellness#nutrition"
-                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all"
+                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all mt-auto"
               >
                 Read Guide{" "}
                 <MoveRight size={15} className="text-orange-500 mt-1" />
@@ -169,7 +169,7 @@ export default function GuidesPage() {
           {/* Container 1 */}
 
           {/* Guide Card 1: Training */}
-          <div className="bg-white rounded-[2rem] overflow-hidden border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
+          <div className="bg-white rounded-[2rem] overflow-hidden border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
             {/* Image Placeholder */}
             <div className="h-52 bg-orange-100 relative overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform">
@@ -178,7 +178,7 @@ export default function GuidesPage() {
             </div>
 
             {/* Text Content */}
-            <div className="p-8">
+            <div className="p-8 flex-1 flex flex-col">
               <span className="text-blue-500 text-xs font-bold uppercase tracking-widest">
                 Training
               </span>
@@ -190,7 +190,7 @@ export default function GuidesPage() {
               </p>
               <Link
                 href="/dogWellness#training"
-                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all"
+                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all mt-auto"
               >
                 Read Guide{" "}
                 <MoveRight size={15} className="text-orange-500 mt-1" />
@@ -201,7 +201,7 @@ export default function GuidesPage() {
           {/* Container 3 */}
 
           {/* Guide Card 1: Vaccination*/}
-          <div className="bg-white rounded-[2rem] overflow-hidden border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
+          <div className="bg-white rounded-[2rem] overflow-hidden border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
             {/* Image Placeholder */}
             <div className="h-52 bg-orange-100 relative overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform">
@@ -210,7 +210,7 @@ export default function GuidesPage() {
             </div>
 
             {/* Text Content */}
-            <div className="p-8">
+            <div className="p-8 flex-1 flex flex-col">
               <span className="text-pink-500 text-xs font-bold uppercase tracking-widest">
                 Vaccination
               </span>
@@ -223,7 +223,7 @@ export default function GuidesPage() {
 
               <Link
                 href="/dogWellness#vaccination"
-                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all flex items-center  "
+                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all flex items-center mt-auto "
               >
                 Read Guide
                 <MoveRight size={15} className="text-orange-500 mt-1" />

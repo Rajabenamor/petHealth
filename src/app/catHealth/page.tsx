@@ -4,7 +4,7 @@ export default function catHealth() {
   return (
     <main className="min-h-screen bg-stone-50 py-12">
       <div className="max-w-4xl mx-auto px-6">
-        <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
+        <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
           <Image
             src="/assets/catHealth.jpg"
             alt="cute pets"
@@ -17,8 +17,8 @@ export default function catHealth() {
           longevity. Regular veterinary care, a balanced diet, and proper
           hygiene are essential components of cat health management.
         </p>
-        <div className="mt-12 space-y-16 ml-5">
-          <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
+        <div className="mt-12 space-y-16 ml-0 md:ml-5">
+          <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
             <Image
               src="/assets/catstress.jpg"
               alt="cat_stress"
@@ -87,7 +87,7 @@ export default function catHealth() {
               If your cat is showing signs of a low appetite, low water intake,
               diarrhea, or vomiting, schedule a veterinary visit.
             </p>
-            <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
+            <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
               <Image
                 src="/assets/catstressOrange.jpg"
                 alt="an orange cat under the bed"
@@ -131,7 +131,7 @@ export default function catHealth() {
 
           {/* Article 2*/}
           <article className="max-w-2xl">
-            <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
+            <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
               <Image
                 src="/assets/catcold.jpg"
                 alt="cat_cold"
@@ -203,7 +203,7 @@ export default function catHealth() {
               Windy, wet, or damp weather can make the cold feel much more
               intense for a cat.
             </p>
-            <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
+            <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
               <Image
                 src="/assets/catwarm.jpg"
                 alt="cat_warm"
@@ -263,7 +263,7 @@ export default function catHealth() {
           </article>
           {/* Article 3 */}
           <article className="max-w-2xl">
-            <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
+            <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
               <Image
                 src="/assets/catcommunication.png"
                 alt="cat_communication"
@@ -325,7 +325,7 @@ export default function catHealth() {
             <h2 className="font-bold text-xl mt-2 text-yellow-700 leading-relaxed">
               1.Tail
             </h2>
-            <div className="relative w-full h-[600px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-5">
+            <div className="relative w-full h-[600px] sm:h-[500px] md:h-[600px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-5">
               <Image
                 src="/assets/cattail.png"
                 alt="cat_tail_movement_meaning"
@@ -401,7 +401,7 @@ export default function catHealth() {
           </article>
           {/* Article 4*/}
           <article className="max-w-2xl">
-            <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
+            <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
               <Image
                 src="/assets/catfur.jpg"
                 alt="cat_furry"
@@ -492,7 +492,7 @@ export default function catHealth() {
               <li>Scratches or mild bleeding of the skin</li>
               <li>Frequent grooming and pulling/biting at the fur</li>
             </ul>
-            <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
+            <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
               <Image
                 src="/assets/hairloss.jpg"
                 alt="hair_loss"

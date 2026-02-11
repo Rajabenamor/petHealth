@@ -3,7 +3,7 @@ export default function dogWellness() {
   return (
     <main className="min-h-screen bg-stone-50 py-16">
       <div className="max-w-4xl mx-auto px-6">
-        <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
+        <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
           <Image
             src="/assets/dognutrition.jpg"
             alt="a pot of food in front of a dog"
@@ -19,16 +19,16 @@ export default function dogWellness() {
           {/* The Content */}
           <h2
             id="nutrition"
-            className="text-3xl font-bold text-amber-900 mt-4 mb-3"
+            className="text-2xl md:text-3xl font-bold text-amber-900 mt-4 mb-3"
           >
             Chicken Allergy in Dogs
           </h2>
-          <p className="text-stone-600 text-lg leading-relaxed">
+          <p className="text-stone-600 text-base md:text-lg leading-relaxed">
             Dogs, like humans, can be allergic to many things, including
             environmental factors and food. Nailing down what&apos;s causing the
             allergies in your dog can be a long and frustrating process.
           </p>
-          <h2 className="font-bold text-xl mt-2 text-yellow-700 leading-relaxed">
+          <h2 className="font-bold text-lg md:text-xl mt-2 text-yellow-700 leading-relaxed">
             Can Dogs Be Allergic to Chicken?
           </h2>
           <p className="leading-relaxed">
@@ -38,13 +38,13 @@ export default function dogWellness() {
             essential vitamins and minerals. However, this ubiquity also makes
             chicken a frequent culprit in canine allergies.
           </p>
-          <h3 className="font-bold text-xl mt-2 text-yellow-700 leading-relaxed">
+          <h3 className="font-bold text-lg md:text-xl mt-2 text-yellow-700 leading-relaxed">
             Symptoms of a Chicken Allergy in Dogs
           </h3>
           <p className="leading-relaxed">
             There are many symptoms of chicken allergies in dogs, including:
           </p>
-          <ul className="list-disc list-inside mt-2 ml-6 leading-relaxed">
+          <ul className="list-disc list-inside mt-2 ml-4 md:ml-6 leading-relaxed">
             <li>
               <span className="font-bold">Itchy skin: </span>
               Persistent scratching, licking or biting, especially around the
@@ -75,7 +75,7 @@ export default function dogWellness() {
         </article>
         {/* Article 2*/}
         <article className="max-w-2xl">
-          <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
+          <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
             <Image
               src="/assets/dogtraining.jpg"
               alt="owner training his dog"
@@ -89,11 +89,11 @@ export default function dogWellness() {
           {/* The Content */}
           <h2
             id="training"
-            className="text-3xl font-bold text-amber-900 mt-4 mb-3"
+            className="text-2xl md:text-3xl font-bold text-amber-900 mt-4 mb-3"
           >
             Scent Training for Dogs
           </h2>
-          <p className="text-stone-600 text-lg leading-relaxed">
+          <p className="text-stone-600 text-base md:text-lg leading-relaxed">
             A dog&apos;s sense of smell is estimated to be hundreds to thousands
             of times more powerful than our own That&apos;s what makes dogs such
             great candidates for scent training.
@@ -104,7 +104,7 @@ export default function dogWellness() {
             for us humans, but we&apos;re not the only ones to benefit from
             scent work.
           </p>
-          <h2 className="font-bold text-xl mt-2 text-yellow-700 leading-relaxed">
+          <h2 className="font-bold text-lg md:text-xl mt-2 text-yellow-700 leading-relaxed">
             How Dog Scent Training Works
           </h2>
           <p className="leading-relaxed">
@@ -133,7 +133,7 @@ export default function dogWellness() {
 
         {/* Article 3*/}
         <article className="max-w-2xl">
-          <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
+          <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
             <Image
               src="/assets/dogvaccination.jpg"
               alt="a dog getting vaccinated"
@@ -147,11 +147,11 @@ export default function dogWellness() {
           {/* The Content */}
           <h2
             id="vaccination"
-            className="text-3xl font-bold text-amber-900 mt-4 mb-3"
+            className="text-2xl md:text-3xl font-bold text-amber-900 mt-4 mb-3"
           >
             Vaccine Reactions in Dogs
           </h2>
-          <p className="text-stone-600 text-lg leading-relaxed">
+          <p className="text-stone-600 text-base md:text-lg leading-relaxed">
             Vaccinations save lives and are an important part of keeping dogs
             safe and healthy. By vaccinating early and regularly, serious and
             even fatal infectious diseases, like canine parvovirus and rabies,
@@ -161,7 +161,7 @@ export default function dogWellness() {
             vaccine reactions.
           </p>
 
-          <h2 className="font-bold text-xl mt-2 text-yellow-700 leading-relaxed">
+          <h2 className="font-bold text-lg md:text-xl mt-2 text-yellow-700 leading-relaxed">
             Do Dogs Develop Vaccine Reactions?
           </h2>
           <p className="leading-relaxed">
@@ -179,7 +179,7 @@ export default function dogWellness() {
             not support a link between vaccination and the development of
             immune-mediated diseases.
           </p>
-          <h2 className="font-bold text-xl mt-2 text-yellow-700 leading-relaxed">
+          <h2 className="font-bold text-lg md:text-xl mt-2 text-yellow-700 leading-relaxed">
             Signs of Dog Vaccine Reactions
           </h2>
           <p className="leading-relaxed">
@@ -190,7 +190,7 @@ export default function dogWellness() {
             are expected and common. Dogs with mild, common vaccination
             reactions can display one or more of the following:
           </p>
-          <ul className="list-disc list-inside mt-2 ml-6 leading-relaxed">
+          <ul className="list-disc list-inside mt-2 ml-4 md:ml-6 leading-relaxed">
             <li>Soreness or swelling at the injection site</li>
             <li>Mild fever</li>
             <li>Reduced energy</li>
@@ -207,7 +207,7 @@ export default function dogWellness() {
             <br />
             Signs of serious vaccine reactions in dogs are as follows:
           </p>
-          <ul className="list-disc list-inside mt-2 ml-6 leading-relaxed">
+          <ul className="list-disc list-inside mt-2 ml-4 md:ml-6 leading-relaxed">
             <li>Vomiting or diarrhea</li>
             <li>Puffy eyes</li>
             <li>Small, raised bumps on the body</li>
