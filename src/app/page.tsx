@@ -1,10 +1,10 @@
-import { Dog, Cat, HospitalIcon, MoveRight } from "lucide-react";
+import { Dog, Cat, HospitalIcon, MoveRight, PawPrint } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function home() {
   return (
-    <main className="p-10">
+    <main className="p-6 md:p-10">
       {/* first section */}
       <section className="px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Left Side: Text */}
@@ -13,9 +13,10 @@ export default function home() {
             Better Care for your{" "}
             <span className="text-yellow-700">Best Friend.</span>
           </h1>
-          <p className="text-lg text-slate-600 leading-relaxed">
-            A digital guide to animal wellness, symptoms, and nutrition. Built
-            by an IT student to help pet owners make informed decisions.
+          <p className="text-lg text-slate-600 leading-relaxed ">
+          Paws-itively helpful tech for your favorite furry friends !
+           A guide to animal wellness, symptoms, and nutrition. 
+          Built to help pet owners make informed decisions.
           </p>
           <div className="flex gap-4">
             <Link
@@ -34,8 +35,8 @@ export default function home() {
         </div>
 
         {/* Right Side: A placeholder for an image or a big icon */}
-        <div className="flex-1 bg-yellow-50 rounded-3xl p-12 flex justify-center items-center border border-yellow-100">
-          <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
+        <div className="flex-1 bg-yellow-50  rounded-3xl p-12 flex justify-center items-center border border-yellow-100">
+          <div className="relative w-[400px] h-[250px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/assets/cat.jpg"
               alt="A cute cat"
@@ -46,7 +47,7 @@ export default function home() {
         </div>
       </section>
       {/* Cards*/}
-      <section className="py-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="py-16 px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Card 1: Dogs */}
         <div className="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:shadow-xl focus-within:shadow-xl transition shadow-sm">
           <Dog className="text-yellow-600 w-10 h-10" />
@@ -74,10 +75,11 @@ export default function home() {
           </p>
         </div>
       </section>
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto mt-16">
         <section className="space-y-10">
           {/* Article 1 */}
-          <div className="flex items-center">
+          <div className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/catstress.jpg"
@@ -86,7 +88,7 @@ export default function home() {
                 className="object-fill" // other alternatives { object-contain, object-none,object-cover}
               />
             </div>
-            <div className="ml-3">
+            <div className="mt-4 ml-10 md:mt-5 md:ml-7">
               <h2 className="text-xl font-bold text-amber-900 mb-2">
                 Signs your Cat is stressed
               </h2>
@@ -101,13 +103,13 @@ export default function home() {
                 className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 hover:gap-4 transition-colors flex items-center gap-0.5"
               >
                 Continue reading
-                <MoveRight size={15} className="mt-1"/>
+                <MoveRight size={15} className="mt-1" />
               </Link>
             </div>
           </div>
 
           {/* Article 2 */}
-          <div className="flex items-center">
+          <div className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/catcold.jpg"
@@ -116,7 +118,7 @@ export default function home() {
                 className="object-cover" // other alternatives { object-contain, object-none,object-cover}
               />
             </div>
-            <div className="ml-3">
+            <div className="mt-4 ml-10 md:mt-5 md:ml-7">
               <h2 className="text-xl font-bold text-amber-900 mb-2">
                 Do Cats Get Cold ?
               </h2>
@@ -137,7 +139,7 @@ export default function home() {
           </div>
 
           {/* Article 3 */}
-          <div className="flex items-center">
+          <div className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/catcommunication.png"
@@ -146,7 +148,7 @@ export default function home() {
                 className="object-cover" // other alternatives { object-contain, object-none,object-cover}
               />
             </div>
-            <div className="ml-3">
+            <div className="mt-4 ml-10 md:mt-5 md:ml-7">
               <h2 className="text-xl font-bold text-amber-900 mb-2">
                 The Hidden Language of Cats: <br />
                 How They Communicate Without Words
@@ -167,7 +169,7 @@ export default function home() {
             </div>
           </div>
           {/* Article 4 */}
-          <div className="flex items-center">
+          <div className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative w-[340px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/catfur.jpg"
@@ -176,14 +178,14 @@ export default function home() {
                 className="object-cover" // other alternatives { object-contain, object-none,object-cover}
               />
             </div>
-            <div className="ml-3">
+            <div className="mt-4 ml-10 md:mt-5 md:ml-7">
               <h2 className="text-xl font-bold text-amber-900 mb-2">
                 Why Is My Cat Losing Hair?
                 <br /> Causes and How to Help
               </h2>
               <p className="text-stone-600 text-lg leading-relaxed">
-                It&apos;s natural for cats to shed fur. We all want a cat who
-                doesn&apos;t leave fur around...
+                It&apos;s natural for cats to shed fur.
+                <br /> We all want a cat who doesn&apos;t leave fur around...
               </p>
               {/* A "Read More" link */}
               <Link
@@ -200,7 +202,7 @@ export default function home() {
         {/* dogs Articles */}
         <section className="space-y-10">
           {/* Article 1 */}
-          <div className="flex items-center">
+          <div className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/seniordog.jpg"
@@ -209,7 +211,7 @@ export default function home() {
                 className="object-fill" // other alternatives { object-contain, object-none,object-cover}
               />
             </div>
-            <div className="ml-3">
+            <div className="mt-4 ml-10 md:mt-5 md:ml-7">
               <h2 className="text-xl font-bold text-amber-900 mb-2">
                 Senior Dog Supplements and Vitamins
               </h2>
@@ -225,13 +227,13 @@ export default function home() {
                 className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 hover:gap-4 transition-colors flex items-center gap-0.5"
               >
                 Continue reading
-                <MoveRight size={15} className="mt-1"/>
+                <MoveRight size={15} className="mt-1" />
               </Link>
             </div>
           </div>
 
           {/* Article 2 */}
-          <div className="flex items-center">
+          <div className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative w-[270px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/doginfection.jpg"
@@ -240,7 +242,7 @@ export default function home() {
                 className="object-cover" // other alternatives { object-contain, object-none,object-cover}
               />
             </div>
-            <div className="ml-3">
+            <div className="mt-4 ml-10 md:mt-5 md:ml-7">
               <h2 className="text-xl font-bold text-amber-900 mb-2">
                 Fungal Infections in Dogs You Should Know About
               </h2>
@@ -255,13 +257,13 @@ export default function home() {
                 className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 hover:gap-4 transition-colors flex items-center gap-0.5"
               >
                 Continue reading
-                <MoveRight size={15} className="mt-1"/>
+                <MoveRight size={15} className="mt-1" />
               </Link>
             </div>
           </div>
 
           {/* Article 3 */}
-          <div className="flex items-center">
+          <div className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/summerdog.png"
@@ -270,13 +272,13 @@ export default function home() {
                 className="object-cover" // other alternatives { object-contain, object-none,object-cover}
               />
             </div>
-            <div className="ml-3">
+            <div className="mt-4 ml-10 md:mt-5 md:ml-7">
               <h2 className="text-xl font-bold text-amber-900 mb-2">
                 Common Summer Dangers for Dogs
               </h2>
               <p className="text-stone-600 text-lg leading-relaxed">
-                Dogs may not count down the days and minutes <br /> 
-               until summer begins like we do. But you can
+                Dogs may not count down the days and minutes <br />
+                until summer begins like we do. But you can
                 <br /> bet they would if they could! Summertime...{" "}
               </p>
               {/* A "Read More" link */}
@@ -285,12 +287,12 @@ export default function home() {
                 className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 hover:gap-4 transition-colors flex items-center gap-0.5"
               >
                 Continue reading
-                <MoveRight size={15} className="mt-1"/>
+                <MoveRight size={15} className="mt-1" />
               </Link>
             </div>
           </div>
-          {/* Article 3 */}
-          <div className="flex items-center">
+          {/* Article 4 */}
+          <div className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative w-[280px] h-[200px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/dogheart.jpg"
@@ -299,7 +301,7 @@ export default function home() {
                 className="object-cover" // other alternatives { object-contain, object-none,object-cover}
               />
             </div>
-            <div className="ml-3">
+            <div className="mt-4 ml-10 md:mt-5 md:ml-7">
               <h2 className="text-xl font-bold text-amber-900 mb-2">
                 Signs of Heart Disease and Heart Failure in Dogs
               </h2>
@@ -314,7 +316,7 @@ export default function home() {
                 className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 hover:gap-4 transition-colors flex items-center gap-0.5"
               >
                 Continue reading
-                <MoveRight size={15} className="mt-1"/>
+                <MoveRight size={15} className="mt-1" />
               </Link>
             </div>
           </div>

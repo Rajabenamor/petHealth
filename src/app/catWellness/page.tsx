@@ -3,7 +3,7 @@ export default function catWellness() {
   return (
     <main className="min-h-screen bg-stone-50 py-16">
       <div className="max-w-4xl mx-auto px-6">
-        <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
+        <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
           <Image
             src="/assets/catnutrition.jpg"
             alt="an owner giving his cat food"
@@ -19,11 +19,11 @@ export default function catWellness() {
           {/* The Content */}
           <h2
             id="nutrition"
-            className="text-3xl font-bold text-amber-900 mt-4 mb-3"
+            className="text-2xl md:text-3xl font-bold text-amber-900 mt-4 mb-3"
           >
             When to Switch From Kitten to Cat Food
           </h2>
-          <p className="text-stone-600 text-lg leading-relaxed">
+          <p className="text-stone-600 text-base md:text-lg leading-relaxed">
             Now that we know why it&apos;s important to feed your kitty an
             age-appropriate diet, the next big question is when to make the
             switch. Unfortunately, it&apos;s not like your pet magically (and
@@ -31,7 +31,7 @@ export default function catWellness() {
             answer to “How long is a cat a kitten?” can be hard to determine.
             The process is gradual and often depends on the individual cat.
           </p>
-          <h2 className="font-bold text-xl mt-2 text-yellow-700 leading-relaxed">
+          <h2 className="font-bold text-lg md:text-xl mt-2 text-yellow-700 leading-relaxed">
             When to Switch to Adult Cat Food
           </h2>
           <p className="leading-relaxed">
@@ -39,7 +39,7 @@ export default function catWellness() {
             time for adult food. Here are some clues to watch out for that can
             help you figure out when to switch from kitten food to adult food.
           </p>
-          <ul className="list-disc list-inside mt-2 ml-6 leading-relaxed">
+          <ul className="list-disc list-inside mt-2 ml-4 md:ml-6 leading-relaxed">
             <li>
               <span className="font-bold">Growth : </span>
               During kittenhood, most visits to the vet include a review of your
@@ -68,7 +68,7 @@ export default function catWellness() {
         </article>
         {/* Article 2*/}
         <article className="max-w-2xl">
-          <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
+          <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px]rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
             <Image
               src="/assets/cattraining.jpg"
               alt="an owner Training his cat"
@@ -82,11 +82,11 @@ export default function catWellness() {
           {/* The Content */}
           <h2
             id="training"
-            className="text-3xl font-bold text-amber-900 mt-4 mb-3"
+            className="text-2xl md:text-3xl font-bold text-amber-900 mt-4 mb-3"
           >
             Can You Train a Cat?
           </h2>
-          <p className="text-stone-600 text-lg leading-relaxed">
+          <p className="text-stone-600 text-base md:text-lg leading-relaxed">
             the question of whether cats are actually trainable is a common one.
             After all, the same characteristics that make us love our cats
             (their intelligence, independence, and curiosity) often make them
@@ -103,7 +103,7 @@ export default function catWellness() {
             openness to experimentation in the beginning to figure out what
             drives your cat.
           </p>
-          <h2 className="font-bold text-xl mt-2 text-yellow-700 leading-relaxed">
+          <h2 className="font-bold text-lg md:text-xl mt-2 text-yellow-700 leading-relaxed">
             Cat Training Techniques to Try
           </h2>
           <p className="leading-relaxed">
@@ -115,7 +115,7 @@ export default function catWellness() {
             anxiety and may even damage your relationship with her. Instead, use
             positive reinforcement for good behavior with lots of rewards.
           </p>
-          <h2 className="font-bold text-xl mt-2 text-yellow-700 leading-relaxed">
+          <h2 className="font-bold text-lg md:text-xl mt-2 text-yellow-700 leading-relaxed">
             How to Train a Cat to Sit
           </h2>
           <p className="leading-relaxed">
@@ -125,7 +125,7 @@ export default function catWellness() {
             <br />
             Here&apos;s how to do it:
           </p>
-          <ul className="list-disc list-inside mt-2 ml-6 leading-relaxed">
+          <ul className="list-disc list-inside mt-2 ml-4 md:ml-6 leading-relaxed">
             <li>
               <span className="font-bold ">Step 1: </span>
               Lure your cat into the sitting position by holding a treat
@@ -149,7 +149,7 @@ export default function catWellness() {
 
         {/* Article 3*/}
         <article className="max-w-2xl">
-          <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
+          <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg mt-10 mb-10">
             <Image
               src="/assets/catvaccination.jpg"
               alt="a cat getting vaccinated"
@@ -163,17 +163,17 @@ export default function catWellness() {
           {/* The Content */}
           <h2
             id="vaccination"
-            className="text-3xl font-bold text-amber-900 mt-4 mb-3"
+            className="text-2xl md:text-3xl font-bold text-amber-900 mt-4 mb-3"
           >
             Everything You Need To Know About Cat Vaccinations
           </h2>
-          <p className="text-stone-600 text-lg leading-relaxed">
+          <p className="text-stone-600 text-base md:text-lg leading-relaxed">
             Cat vaccinations are one of the most debated topics in the pet
             world. Knowing what vaccinations for your cat are necessary and
             which ones are optional can be confusing.
           </p>
 
-          <h2 className="font-bold text-xl mt-2 text-yellow-700 leading-relaxed">
+          <h2 className="font-bold text-lg md:text-xl mt-2 text-yellow-700 leading-relaxed">
             When Should You Vaccinate Your Cat?
           </h2>
           <p className="leading-relaxed">
@@ -195,7 +195,7 @@ export default function catWellness() {
             after 1-3 years, depending on the duration of the vaccine, location,
             and lifestyle.
           </p>
-          <h2 className="font-bold text-xl mt-2 text-yellow-700 leading-relaxed">
+          <h2 className="font-bold text-lg md:text-xl mt-2 text-yellow-700 leading-relaxed">
             Do I Need to Vaccinate My Cat?
           </h2>
           <p className="leading-relaxed">

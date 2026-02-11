@@ -29,9 +29,9 @@ export default function Footer() {
             <p className="text-white/70">rajabenamor538@gmail.com</p>
             <h4 className="font-semibold text-white mt-2"> Enter your E-mail</h4>
             <input
-              className="mt-2 rounded-xl border-2 border-white outline-none focus:border-yellow-600 shadow-sm py-2"
+              className="w-full mt-2 rounded-xl border-2 border-white outline-none focus:border-yellow-600 shadow-sm py-2"
               placeholder="  Enter Your E-mail here"
-              size={35}
+              type="email"
             />
             <button 
           type="submit"

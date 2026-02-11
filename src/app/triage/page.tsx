@@ -33,20 +33,20 @@ export default function TriagePage() {
               <span className="bg-red-100 text-red-700 text-xs font-bold px-2 py-1 rounded">
                 EMERGENCY
               </span>
-              <h3 className="text-xl font-bold mt-2">Difficulty Breathing</h3>
+              <h3 className="text-lg md:text-xl font-bold mt-2">Difficulty Breathing</h3>
               <p className="text-stone-600 mt-1">
                 If your pet is panting without exercise or has blue-tinted gums,
                 this is a critical emergency.
               </p>
             </div>
-            <HospitalIcon className="text-red-500 w-8 h-8" />
+            <HospitalIcon className="text-red-500 w-8 h-8 flex-col sm:flex-row" />
           </div>
           <button className="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg text-sm font-bold">
             Find Nearest Vet
           </button>
         </div>
 
-        <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-5">
+        <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg mt-5">
           <Image
             src="/pets2.jpg"
             alt="cute pets"
@@ -54,7 +54,7 @@ export default function TriagePage() {
             className="object-cover"
           />
         </div>
-        <p className="mt-5 text-lg">
+        <p className="mt-5 text-base md:text-lg">
           Knowing and regularly checking your pet&apos;s health is essential to
           ensuring a long, happy, and comfortable life for them. Pets can&apos;t
           always show or communicate when something is wrong, so routine

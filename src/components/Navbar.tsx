@@ -1,7 +1,10 @@
-import { ChevronDown, PawPrint } from "lucide-react";
+"use client";
+import { ChevronDown, PawPrint, Menu, X } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="border-b border-slate-100 bg-yellow-900">
       <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
@@ -11,7 +14,7 @@ export default function Navbar() {
             <span className="font-bold text-xl text-white">PetHealth</span>
           </div>
         </Link>
-        <div className="flex gap-8">
+        <div className="hidden md:flex gap-8">
           <Link href="/" className="text-white hover:text-yellow-500">
             Home
           </Link>
@@ -85,10 +88,82 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-
-          
         </div>
+        <button
+          className="md:hidden "
+          aria-label="Toggle Menu"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {/*when using a phone : if the menu is open the X is showed , if not ; the menu is showed */}
+          {isOpen ? <X size={28} className="text-white"/> : <Menu size={28} className="text-white" />}
+        </button>
       </div>
+      {/*Mobile Phone Menu View */}
+      {isOpen && (
+        <div className="md:hidden bg-yellow-900 border-t border-yellow-800 px-6 py-8 space-y-6">
+          <Link
+            href="/"
+            className="block text-white text-lg font-medium"
+            onClick={() => setIsOpen(false)}
+          >
+            Home
+          </Link>
+
+          <div className="space-y-4">
+            <p className="text-yellow-500 text-xs font-bold uppercase">
+              Guides
+            </p>
+            <Link
+              href="/guides"
+              className="block text-white pl-4"
+              onClick={() => setIsOpen(false)}
+            >
+                Guides
+            </Link>
+            <Link
+              href="/dogWellness"
+              className="block text-white pl-4"
+              onClick={() => setIsOpen(false)}
+            >
+              Dog Wellness
+            </Link>
+            <Link
+              href="/catWellness"
+              className="block text-white pl-4"
+              onClick={() => setIsOpen(false)}
+            >
+              Cat Wellness
+            </Link>
+          </div>
+
+          <div className="space-y-4">
+            <p className="text-yellow-500 text-xs font-bold uppercase">
+              Triage
+            </p>
+            <Link
+              href="/triage"
+              className="block text-white pl-4"
+              onClick={() => setIsOpen(false)}
+            >
+              Triage
+            </Link>
+            <Link
+              href="/dogHealth"
+              className="block text-white pl-4"
+              onClick={() => setIsOpen(false)}
+            >
+              Dog Health
+            </Link>
+            <Link
+              href="/catHealth"
+              className="block text-white pl-4"
+              onClick={() => setIsOpen(false)}
+            >
+              Cat Health
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
