@@ -48,7 +48,7 @@ export default function TriagePage() {
 
         <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg mt-5">
           <Image
-            src="/pets2.jpg"
+            src="/assets/pets2.jpg"
             alt="cute pets"
             fill
             className="object-cover"
