@@ -86,9 +86,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Link href="/about" className="text-white hover:text-yellow-500">
-            About
-          </Link>
+          
         </div>
       </div>
     </nav>
