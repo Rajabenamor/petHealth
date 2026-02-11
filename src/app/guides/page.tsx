@@ -19,17 +19,17 @@ export default function GuidesPage() {
 
         {/* Category Selector */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <button className="flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm hover:shadow-md border border-stone-200 transition">
+          <button className="flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm  border border-stone-200 transition">
             <Utensils size={18} className="text-orange-500" />
             <span className="font-medium">Nutrition</span>
           </button>
 
-          <button className="flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm hover:shadow-md border border-stone-200 transition">
+          <button className="flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm  border border-stone-200 transition">
             <Dumbbell size={18} className="text-blue-500" />
             <span className="font-medium">Training</span>
           </button>
 
-          <button className="flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm hover:shadow-md border border-stone-200 transition">
+          <button className="flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm  border border-stone-200 transition">
             <Syringe size={18} className="text-pink-500"/>
             <span className="font-medium">Vaccination</span>
           </button>
@@ -42,12 +42,12 @@ export default function GuidesPage() {
             {/* Image Placeholder */}
             <div className="h-52 bg-orange-100 relative overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform">
-                <Image src="/assets/cat.jpg" alt="cute cat" fill />
+                <Image src="/assets/catnutrition.jpg" alt="cat_nutrition" fill />
               </div>
             </div>
 
             {/* Text Content */}
-            <div className="p-8">
+            <div className="p-8 ">
               <span className="text-orange-600 text-xs font-bold uppercase tracking-widest">
                 Nutrition
               </span>
@@ -58,8 +58,8 @@ export default function GuidesPage() {
                 Is Your Kitten Ready for Adult Cat Food?
               </p>
               <Link
-                href="/guides/nutrition"
-                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all"
+                href="/catWellness#nutrition"
+                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all "
               >
                 Read Guide{" "}
                 <MoveRight size={15} className="text-orange-500 mt-1" />
@@ -74,24 +74,25 @@ export default function GuidesPage() {
             {/* Image Placeholder */}
             <div className="h-52 bg-orange-100 relative overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform">
-                <Image src="/assets/cat.jpg" alt="cute cat" fill />
+                <Image src="/assets/cattraining.jpg" alt="cat_training" fill />
               </div>
             </div>
 
             {/* Text Content */}
-            <div className="p-8">
-              <span className="text-orange-600 text-xs font-bold uppercase tracking-widest">
+            <div className="p-8 ">
+              <span className="text-blue-500 text-xs font-bold uppercase tracking-widest">
                 Training
               </span>
               <h3 className="text-2xl font-bold text-stone-900 mt-2 mb-3">
                 Can You Train a Cat?
               </h3>
-              <p className="text-stone-600 leading-relaxed mb-6">
+              <p className="text-stone-600 leading-relaxed mb-21">
                 Cat Training Techniques to Try
               </p>
+              
               <Link
-                href="/guides/nutrition"
-                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all"
+                href="/catWellness#training"
+                className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all "
               >
                 Read Guide{" "}
                 <MoveRight size={15} className="text-orange-500 mt-1" />
@@ -106,14 +107,14 @@ export default function GuidesPage() {
             {/* Image Placeholder */}
             <div className="h-52 bg-orange-100 relative overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform">
-                <Image src="/assets/cat.jpg" alt="cute cat" fill />
+                <Image src="/assets/catvaccination.jpg" alt="cat_vaccination" fill />
               </div>
             </div>
 
             {/* Text Content */}
             <div className="p-8">
-              <span className="text-orange-600 text-xs font-bold uppercase tracking-widest">
-                Vaccinations
+              <span className="text-pink-500 text-xs font-bold uppercase tracking-widest">
+                Vaccination
               </span>
               <h3 className="text-2xl font-bold text-stone-900 mt-2 mb-3">
                 Everything You Need To Know About Cat Vaccinations
@@ -122,7 +123,7 @@ export default function GuidesPage() {
                 When Should You Vaccinate Your Cat?
               </p>
               <Link
-                href="/guides/nutrition"
+                href="/catWellness#vaccination"
                 className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all"
               >
                 Read Guide{" "}
@@ -140,7 +141,7 @@ export default function GuidesPage() {
             {/* Image Placeholder */}
             <div className="h-52 bg-orange-100 relative overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform">
-                <Image src="/assets/cat.jpg" alt="cute cat" fill />
+                <Image src="/assets/dognutrition.jpg" alt="a pot of food in front of a dog" fill />
               </div>
             </div>
 
@@ -152,11 +153,11 @@ export default function GuidesPage() {
               <h3 className="text-2xl font-bold text-stone-900 mt-2 mb-3">
                 Chicken Allergy in Dogs
               </h3>
-              <p className="text-stone-600 leading-relaxed mb-6">
+              <p className="text-stone-600 leading-relaxed mb-14">
                 Can Dogs Be Allergic to Chicken?
               </p>
               <Link
-                href="/guides/nutrition"
+                href="/dogWellness#nutrition"
                 className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all"
               >
                 Read Guide{" "}
@@ -172,23 +173,23 @@ export default function GuidesPage() {
             {/* Image Placeholder */}
             <div className="h-52 bg-orange-100 relative overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform">
-                <Image src="/assets/cat.jpg" alt="cute cat" fill />
+                <Image src="/assets/dogtraining.jpg" alt="owner training his dog" fill />
               </div>
             </div>
 
             {/* Text Content */}
             <div className="p-8">
-              <span className="text-orange-600 text-xs font-bold uppercase tracking-widest">
+              <span className="text-blue-500 text-xs font-bold uppercase tracking-widest">
                 Training
               </span>
               <h3 className="text-2xl font-bold text-stone-900 mt-2 mb-3">
                 Scent Training for Dogs
               </h3>
-              <p className="text-stone-600 leading-relaxed mb-6">
+              <p className="text-stone-600 leading-relaxed mb-14">
                 How Dog Scent Training Works ?
               </p>
               <Link
-                href="/guides/nutrition"
+                href="/dogWellness#training"
                 className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all"
               >
                 Read Guide{" "}
@@ -204,14 +205,14 @@ export default function GuidesPage() {
             {/* Image Placeholder */}
             <div className="h-52 bg-orange-100 relative overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform">
-                <Image src="/assets/cat.jpg" alt="cute cat" fill />
+                <Image src="/assets/dogvaccination.jpg" alt="a dog getting vaccinated" fill />
               </div>
             </div>
 
             {/* Text Content */}
             <div className="p-8">
-              <span className="text-orange-600 text-xs font-bold uppercase tracking-widest">
-                Vaccinations
+              <span className="text-pink-500 text-xs font-bold uppercase tracking-widest">
+                Vaccination
               </span>
               <h3 className="text-2xl font-bold text-stone-900 mt-2 mb-3">
                 Vaccine Reactions in Dogs
@@ -221,7 +222,7 @@ export default function GuidesPage() {
               </p>
 
               <Link
-                href="/guides/nutrition"
+                href="/dogWellness#vaccination"
                 className="font-bold text-stone-900 flex items-center gap-2 hover:gap-4 transition-all flex items-center  "
               >
                 Read Guide

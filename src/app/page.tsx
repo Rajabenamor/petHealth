@@ -25,7 +25,7 @@ export default function home() {
               Explore Guides
             </Link>
             <Link
-              href="/"
+              href="/triage"
               className="border-2 border-slate-200 px-8 py-3 rounded-full font-bold hover:bg-slate-50 transition"
             >
               Learn More
@@ -98,7 +98,7 @@ export default function home() {
               {/* A "Read More" link */}
               <Link
                 href="/catHealth#stress"
-                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 hover:gap-4 transition-colors flex items-center gap-0.5"
               >
                 Continue reading
                 <MoveRight size={15} className="mt-1"/>
@@ -128,7 +128,7 @@ export default function home() {
               {/* A "Read More" link */}
               <Link
                 href="/catHealth#temperature"
-                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 hover:gap-4 transition-colors flex items-center gap-0.5"
               >
                 Continue reading
                 <MoveRight size={15} className="mt-1" />
@@ -154,12 +154,12 @@ export default function home() {
               <p className="text-stone-600 text-lg leading-relaxed">
                 Cats may be quiet creatures, but they are constantly
                 <br /> communicating in subtle and fascinating ways.
-                <br /> Unlike dogs, cats rely heavily on
+                <br /> Unlike dogs, cats rely heavily on...
               </p>
               {/* A "Read More" link */}
               <Link
                 href="/catHealth#communication"
-                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 hover:gap-4 transition-colors flex items-center gap-0.5"
               >
                 Continue reading
                 <MoveRight size={15} className="mt-1" />
@@ -188,7 +188,7 @@ export default function home() {
               {/* A "Read More" link */}
               <Link
                 href="/catHealth#hairLoss"
-                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 hover:gap-4 transition-colors flex items-center gap-0.5"
               >
                 Continue reading
                 <MoveRight size={15} className="mt-1" />
@@ -222,7 +222,7 @@ export default function home() {
               {/* A "Read More" link */}
               <Link
                 href="/dogHealth#vitamins"
-                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 hover:gap-4 transition-colors flex items-center gap-0.5"
               >
                 Continue reading
                 <MoveRight size={15} className="mt-1"/>
@@ -247,12 +247,12 @@ export default function home() {
               <p className="text-stone-600 text-lg leading-relaxed">
                 When you hear that your dog has an infection,
                 <br /> you&apos;re most likely thinking of a bacterial or
-                <br /> viral infection. However,
+                <br /> viral infection. However...
               </p>
               {/* A "Read More" link */}
               <Link
                 href="/dogHealth#infection"
-                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 hover:gap-4 transition-colors flex items-center gap-0.5"
               >
                 Continue reading
                 <MoveRight size={15} className="mt-1"/>
@@ -275,14 +275,14 @@ export default function home() {
                 Common Summer Dangers for Dogs
               </h2>
               <p className="text-stone-600 text-lg leading-relaxed">
-                Dogs may not count down the days and minutes
-                <br /> until summer begins like we do. But you can
+                Dogs may not count down the days and minutes <br /> 
+               until summer begins like we do. But you can
                 <br /> bet they would if they could! Summertime...{" "}
               </p>
               {/* A "Read More" link */}
               <Link
                 href="/dogHealth#summer"
-                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 hover:gap-4 transition-colors flex items-center gap-0.5"
               >
                 Continue reading
                 <MoveRight size={15} className="mt-1"/>
@@ -306,12 +306,12 @@ export default function home() {
               <p className="text-stone-600 text-lg leading-relaxed">
                 Dogs can develop heart problems that lead to heart failure.
                 <br /> While dogs don&apos;t tend to have heart attacks like
-                people do
+                people...
               </p>
               {/* A "Read More" link */}
               <Link
                 href="/dogHealth#disease"
-                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 hover:gap-4 transition-colors flex items-center gap-0.5"
               >
                 Continue reading
                 <MoveRight size={15} className="mt-1"/>

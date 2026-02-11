@@ -35,14 +35,14 @@ export default function Navbar() {
                 </Link>
 
                 <Link
-                  href="/dog wellness"
+                  href="/dogWellness"
                   className="block px-4 py-3 text-sm text-stone-700 hover:bg-yellow-50 hover:text-yellow-700"
                 >
                   Dog Wellness
                 </Link>
 
                 <Link
-                  href="/cat wellness"
+                  href="/catWellness"
                   className="block px-4 py-3 text-sm text-stone-700 hover:bg-yellow-50 hover:text-yellow-700"
                 >
                   Cat Wellness
