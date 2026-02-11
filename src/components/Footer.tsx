@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Footer() {
   return (
-    <footer className="bg-yellow-900 text-white py-12 mt-20">
+    <footer className="bg-yellow-900 text-white py-9 mt-20">
       {/* 1. The Container (Centering) */}
       <div className="max-w-6xl mx-auto px-6">
         {/* 2. The Grid (Layout) */}
@@ -33,6 +33,12 @@ export default function Footer() {
               placeholder="  Enter Your E-mail here"
               size={35}
             />
+            <button 
+          type="submit"
+          className="bg-yellow-600 text-white font-bold py-2 px-6 rounded-xl w-fit hover:bg-yellow-700 transition mt-2"
+        >
+          Submit
+        </button>
           </div>
         </div>
         <div>
