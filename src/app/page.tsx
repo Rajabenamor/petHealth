@@ -1,65 +1,325 @@
+import { Dog, Cat, HospitalIcon, MoveRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+export default function home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className="p-10">
+      {/* first section */}
+      <section className="px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        {/* Left Side: Text */}
+        <div className="flex-1 space-y-6">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight">
+            Better Care for your{" "}
+            <span className="text-yellow-700">Best Friend.</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+          <p className="text-lg text-slate-600 leading-relaxed">
+            A digital guide to animal wellness, symptoms, and nutrition. Built
+            by an IT student to help pet owners make informed decisions.
+          </p>
+          <div className="flex gap-4">
+            <Link
+              href="/guides"
+              className="bg-yellow-700 text-white px-8 py-3 rounded-full font-bold hover:shadow-lg transition"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Explore Guides
+            </Link>
+            <Link
+              href="/"
+              className="border-2 border-slate-200 px-8 py-3 rounded-full font-bold hover:bg-slate-50 transition"
             >
-              Learning
-            </a>{" "}
-            center.
+              Learn More
+            </Link>
+          </div>
+        </div>
+
+        {/* Right Side: A placeholder for an image or a big icon */}
+        <div className="flex-1 bg-yellow-50 rounded-3xl p-12 flex justify-center items-center border border-yellow-100">
+          <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
+            <Image
+              src="/assets/cat.jpg"
+              alt="A cute cat"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </section>
+      {/* Cards*/}
+      <section className="py-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Card 1: Dogs */}
+        <div className="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:shadow-xl focus-within:shadow-xl transition shadow-sm">
+          <Dog className="text-yellow-600 w-10 h-10" />
+          <h3 className="text-xl font-bold mb-2">Canine Wellness</h3>
+          <p className="text-slate-600">
+            From nutrition tips to exercise routines for every breed.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Card 2: Cats */}
+        <div className="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:shadow-xl focus-within:shadow-xl transition shadow-sm">
+          <Cat className="text-yellow-600 w-10 h-10" />
+          <h3 className="text-xl font-bold mb-2">Feline Health</h3>
+          <p className="text-slate-600">
+            Understanding cat behavior and common health warning signs.
+          </p>
         </div>
-      </main>
-    </div>
+
+        {/* Card 3: First Aid */}
+        <div className="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:shadow-xl focus-within:shadow-xl transition shadow-sm">
+          <HospitalIcon className="text-yellow-600 w-10 h-10" />
+          <h3 className="text-xl font-bold mb-2">Emergency Prep</h3>
+          <p className="text-slate-600">
+            What to do in a pet emergency before you reach the vet.
+          </p>
+        </div>
+      </section>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto mt-16">
+        <section className="space-y-10">
+          {/* Article 1 */}
+          <div className="flex items-center">
+            <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/assets/catstress.jpg"
+                alt="stressed_cat"
+                fill
+                className="object-fill" // other alternatives { object-contain, object-none,object-cover}
+              />
+            </div>
+            <div className="ml-3">
+              <h2 className="text-xl font-bold text-amber-900 mb-2">
+                Signs your Cat is stressed
+              </h2>
+              <p className="text-stone-600 text-lg leading-relaxed">
+                Stress is defined as the psychological
+                <br /> and physical strainthat's placed on
+                <br /> an animal when...
+              </p>
+              {/* A "Read More" link */}
+              <Link
+                href="/catHealth#stress"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+              >
+                Continue reading
+                <MoveRight size={15} className="mt-1"/>
+              </Link>
+            </div>
+          </div>
+
+          {/* Article 2 */}
+          <div className="flex items-center">
+            <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/assets/catcold.jpg"
+                alt="a cold_cat"
+                fill
+                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+              />
+            </div>
+            <div className="ml-3">
+              <h2 className="text-xl font-bold text-amber-900 mb-2">
+                Do Cats Get Cold ?
+              </h2>
+              <p className="text-stone-600 text-lg leading-relaxed">
+                As you bundle up in heavier clothes
+                <br /> and winter coats, you might start to
+                <br /> wonder if your cat...
+              </p>
+              {/* A "Read More" link */}
+              <Link
+                href="/catHealth#temperature"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+              >
+                Continue reading
+                <MoveRight size={15} className="mt-1" />
+              </Link>
+            </div>
+          </div>
+
+          {/* Article 3 */}
+          <div className="flex items-center">
+            <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/assets/catcommunication.png"
+                alt="two beautiful cats"
+                fill
+                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+              />
+            </div>
+            <div className="ml-3">
+              <h2 className="text-xl font-bold text-amber-900 mb-2">
+                The Hidden Language of Cats: <br />
+                How They Communicate Without Words
+              </h2>
+              <p className="text-stone-600 text-lg leading-relaxed">
+                Cats may be quiet creatures, but they are constantly
+                <br /> communicating in subtle and fascinating ways.
+                <br /> Unlike dogs, cats rely heavily on
+              </p>
+              {/* A "Read More" link */}
+              <Link
+                href="/catHealth#communication"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+              >
+                Continue reading
+                <MoveRight size={15} className="mt-1" />
+              </Link>
+            </div>
+          </div>
+          {/* Article 4 */}
+          <div className="flex items-center">
+            <div className="relative w-[340px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/assets/catfur.jpg"
+                alt="furry_cat"
+                fill
+                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+              />
+            </div>
+            <div className="ml-3">
+              <h2 className="text-xl font-bold text-amber-900 mb-2">
+                Why Is My Cat Losing Hair?
+                <br /> Causes and How to Help
+              </h2>
+              <p className="text-stone-600 text-lg leading-relaxed">
+                It&apos;s natural for cats to shed fur. We all want a cat who
+                doesn&apos;t leave fur around...
+              </p>
+              {/* A "Read More" link */}
+              <Link
+                href="/catHealth#hairLoss"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+              >
+                Continue reading
+                <MoveRight size={15} className="mt-1" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* dogs Articles */}
+        <section className="space-y-10">
+          {/* Article 1 */}
+          <div className="flex items-center">
+            <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/assets/seniordog.jpg"
+                alt="senior_dog"
+                fill
+                className="object-fill" // other alternatives { object-contain, object-none,object-cover}
+              />
+            </div>
+            <div className="ml-3">
+              <h2 className="text-xl font-bold text-amber-900 mb-2">
+                Senior Dog Supplements and Vitamins
+              </h2>
+              <p className="text-stone-600 text-lg leading-relaxed">
+                Caring for senior dogs can be rewarding and
+                <br />
+                simultaneously demanding on a pet parent. As
+                <br /> your relationship with your dog deepens,...
+              </p>
+              {/* A "Read More" link */}
+              <Link
+                href="/dogHealth#vitamins"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+              >
+                Continue reading
+                <MoveRight size={15} className="mt-1"/>
+              </Link>
+            </div>
+          </div>
+
+          {/* Article 2 */}
+          <div className="flex items-center">
+            <div className="relative w-[270px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/assets/doginfection.jpg"
+                alt="dog_infection"
+                fill
+                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+              />
+            </div>
+            <div className="ml-3">
+              <h2 className="text-xl font-bold text-amber-900 mb-2">
+                Fungal Infections in Dogs You Should Know About
+              </h2>
+              <p className="text-stone-600 text-lg leading-relaxed">
+                When you hear that your dog has an infection,
+                <br /> you&apos;re most likely thinking of a bacterial or
+                <br /> viral infection. However,
+              </p>
+              {/* A "Read More" link */}
+              <Link
+                href="/dogHealth#infection"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+              >
+                Continue reading
+                <MoveRight size={15} className="mt-1"/>
+              </Link>
+            </div>
+          </div>
+
+          {/* Article 3 */}
+          <div className="flex items-center">
+            <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/assets/summerdog.png"
+                alt="dog having fun"
+                fill
+                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+              />
+            </div>
+            <div className="ml-3">
+              <h2 className="text-xl font-bold text-amber-900 mb-2">
+                Common Summer Dangers for Dogs
+              </h2>
+              <p className="text-stone-600 text-lg leading-relaxed">
+                Dogs may not count down the days and minutes
+                <br /> until summer begins like we do. But you can
+                <br /> bet they would if they could! Summertime...{" "}
+              </p>
+              {/* A "Read More" link */}
+              <Link
+                href="/dogHealth#summer"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+              >
+                Continue reading
+                <MoveRight size={15} className="mt-1"/>
+              </Link>
+            </div>
+          </div>
+          {/* Article 3 */}
+          <div className="flex items-center">
+            <div className="relative w-[280px] h-[200px] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/assets/dogheart.jpg"
+                alt="a cute dog holding a heart"
+                fill
+                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+              />
+            </div>
+            <div className="ml-3">
+              <h2 className="text-xl font-bold text-amber-900 mb-2">
+                Signs of Heart Disease and Heart Failure in Dogs
+              </h2>
+              <p className="text-stone-600 text-lg leading-relaxed">
+                Dogs can develop heart problems that lead to heart failure.
+                <br /> While dogs don&apos;t tend to have heart attacks like
+                people do
+              </p>
+              {/* A "Read More" link */}
+              <Link
+                href="/dogHealth#disease"
+                className="mt-2 text-yellow-700 font-semibold hover:text-yellow-800 transition-colors flex items-center gap-0.5"
+              >
+                Continue reading
+                <MoveRight size={15} className="mt-1"/>
+              </Link>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
   );
 }
