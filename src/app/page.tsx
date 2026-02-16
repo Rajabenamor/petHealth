@@ -34,9 +34,9 @@ export default function home() {
           </div>
         </div>
 
-        {/* Right Side: A placeholder for an image or a big icon */}
+   
         <div className="flex-1 bg-yellow-50  rounded-3xl p-12 flex justify-center items-center border border-yellow-100">
-          <div className="relative w-[400px] h-[250px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
+          <div className="relative w-[350px] h-[250px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/assets/cat.jpg"
               alt="A cute cat"
@@ -110,7 +110,7 @@ export default function home() {
 
           {/* Article 2 */}
           <div className="flex flex-col md:flex-row items-center md:items-start">
-            <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative sm:w-[220px] h-[190px] md:w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/catcold.jpg"
                 alt="a cold_cat"
@@ -140,7 +140,7 @@ export default function home() {
 
           {/* Article 3 */}
           <div className="flex flex-col md:flex-row items-center md:items-start">
-            <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative sm:w-[220px] h-[190px] md:w-[250px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/catcommunication.png"
                 alt="two beautiful cats"
@@ -148,15 +148,13 @@ export default function home() {
                 className="object-cover" // other alternatives { object-contain, object-none,object-cover}
               />
             </div>
-            <div className="mt-4 ml-10 md:mt-5 md:ml-7">
+            <div className="mt-5 ml-10 md:mt-6 md:ml-7">
               <h2 className="text-xl font-bold text-amber-900 mb-2">
-                The Hidden Language of Cats: <br />
-                How They Communicate Without Words
+                The Hidden Language of Cats: 
               </h2>
               <p className="text-stone-600 text-lg leading-relaxed">
-                Cats may be quiet creatures, but they are constantly
-                <br /> communicating in subtle and fascinating ways.
-                <br /> Unlike dogs, cats rely heavily on...
+                Cats may be quiet creatures, but they are constantly...
+                
               </p>
               {/* A "Read More" link */}
               <Link
@@ -170,7 +168,7 @@ export default function home() {
           </div>
           {/* Article 4 */}
           <div className="flex flex-col md:flex-row items-center md:items-start">
-            <div className="relative w-[340px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/catfur.jpg"
                 alt="furry_cat"
@@ -185,7 +183,7 @@ export default function home() {
               </h2>
               <p className="text-stone-600 text-lg leading-relaxed">
                 It&apos;s natural for cats to shed fur.
-                <br /> We all want a cat who doesn&apos;t leave fur around...
+                <br /> We all want a cat who doesn&apos;t leave...
               </p>
               {/* A "Read More" link */}
               <Link
@@ -218,8 +216,7 @@ export default function home() {
               <p className="text-stone-600 text-lg leading-relaxed">
                 Caring for senior dogs can be rewarding and
                 <br />
-                simultaneously demanding on a pet parent. As
-                <br /> your relationship with your dog deepens,...
+                simultaneously demanding on a pet parent...
               </p>
               {/* A "Read More" link */}
               <Link
@@ -234,7 +231,7 @@ export default function home() {
 
           {/* Article 2 */}
           <div className="flex flex-col md:flex-row items-center md:items-start">
-            <div className="relative w-[270px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative sm:w-[220px] h-[190px] md:w-[280px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/doginfection.jpg"
                 alt="dog_infection"
@@ -248,8 +245,7 @@ export default function home() {
               </h2>
               <p className="text-stone-600 text-lg leading-relaxed">
                 When you hear that your dog has an infection,
-                <br /> you&apos;re most likely thinking of a bacterial or
-                <br /> viral infection. However...
+                <br /> you&apos;re most likely thinking of...
               </p>
               {/* A "Read More" link */}
               <Link
@@ -264,7 +260,7 @@ export default function home() {
 
           {/* Article 3 */}
           <div className="flex flex-col md:flex-row items-center md:items-start">
-            <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative sm:w-[220px] h-[190px] md:w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/summerdog.png"
                 alt="dog having fun"
@@ -277,9 +273,8 @@ export default function home() {
                 Common Summer Dangers for Dogs
               </h2>
               <p className="text-stone-600 text-lg leading-relaxed">
-                Dogs may not count down the days and minutes <br />
-                until summer begins like we do. But you can
-                <br /> bet they would if they could! Summertime...{" "}
+                Dogs may not count down the days and<br/> minutes 
+                until summer begins like...
               </p>
               {/* A "Read More" link */}
               <Link
@@ -293,7 +288,7 @@ export default function home() {
           </div>
           {/* Article 4 */}
           <div className="flex flex-col md:flex-row items-center md:items-start">
-            <div className="relative w-[280px] h-[200px] rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative sm:w-[220px] h-[190px] md:w-[280px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/dogheart.jpg"
                 alt="a cute dog holding a heart"
@@ -306,9 +301,8 @@ export default function home() {
                 Signs of Heart Disease and Heart Failure in Dogs
               </h2>
               <p className="text-stone-600 text-lg leading-relaxed">
-                Dogs can develop heart problems that lead to heart failure.
-                <br /> While dogs don&apos;t tend to have heart attacks like
-                people...
+                Dogs can develop heart problems that<br/> lead to heart failure.
+                 
               </p>
               {/* A "Read More" link */}
               <Link
