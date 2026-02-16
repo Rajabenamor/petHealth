@@ -18,8 +18,8 @@ export default function Footer() {
             <a href="/guides" className="text-white/70 hover:underline">
               Guides
             </a>
-            <a href="/triage" className="text-white/70 hover:underline">
-              Symptom Checker
+            <a href="/calorieCalculation" className="text-white/70 hover:underline">
+              Calorie Calculator
             </a>
           </div>
 
@@ -27,18 +27,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white">E-mail</h4>
             <p className="text-white/70">rajabenamor538@gmail.com</p>
-            <h4 className="font-semibold text-white mt-2"> Enter your E-mail</h4>
-            <input
-              className="w-full mt-2 rounded-xl border-2 border-white outline-none focus:border-yellow-600 shadow-sm py-2"
-              placeholder="  Enter Your E-mail here"
-              type="email"
-            />
-            <button 
-          type="submit"
-          className="bg-yellow-600 text-white font-bold py-2 px-6 rounded-xl w-fit hover:bg-yellow-700 transition mt-2"
-        >
-          Submit
-        </button>
+            
           </div>
         </div>
         <div>
