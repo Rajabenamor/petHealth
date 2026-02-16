@@ -18,8 +18,8 @@ export default function Footer() {
             <a href="/guides" className="text-white/70 hover:underline">
               Guides
             </a>
-            <a href="/triage" className="text-white/70 hover:underline">
-              Symptom Checker
+            <a href="/calorieCalculation" className="text-white/70 hover:underline">
+              Calorie Calculator
             </a>
           </div>
 

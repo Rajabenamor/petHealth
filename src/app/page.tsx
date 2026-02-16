@@ -26,7 +26,7 @@ export default function home() {
               Explore Guides
             </Link>
             <Link
-              href="/triage"
+              href="/calorieCalculation"
               className="border-2 border-slate-200 px-8 py-3 rounded-full font-bold hover:bg-slate-50 transition"
             >
               Learn More

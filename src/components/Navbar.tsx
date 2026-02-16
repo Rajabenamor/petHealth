@@ -54,22 +54,22 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/*Triage */}
+          {/*Calorie Calculation */}
           <div className="relative group">
             <Link
-              href="/triage"
+              href="/calorieCalculation"
               className="text-white hover:text-yellow-500  flex  items-center"
             >
-              Triage{" "}
+              Calorie Calculator{" "}
               <ChevronDown className="text-white w-4 h-4 mt-1 hover:text-yellow-500 " />
             </Link>
             <div className="absolute left-0 w-48 pt-2 hidden group-hover:block group-focus-within:block z-50">
               <div className="bg-white rounded-xl shadow-xl border border-stone-100 overflow-hidden">
                 <Link
-                  href="/triage"
+                  href="/calorieCalculation"
                   className="block px-4 py-3 text-sm text-stone-700 hover:bg-yellow-50 hover:text-yellow-700"
                 >
-                  Symptom Checker
+                  Calorie Calculator
                 </Link>
 
                 <Link
@@ -138,14 +138,14 @@ export default function Navbar() {
 
           <div className="space-y-4">
             <p className="text-yellow-500 text-xs font-bold uppercase">
-              Triage
+              Calorie Calculator
             </p>
             <Link
-              href="/triage"
+              href="/calorieCalculation"
               className="block text-white pl-4"
               onClick={() => setIsOpen(false)}
             >
-              Triage
+              Calorie Calculator
             </Link>
             <Link
               href="/dogHealth"
