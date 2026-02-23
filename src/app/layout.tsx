@@ -31,19 +31,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* <!-- Google Tag Manager (noscript) --> */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-P4J6BN54"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
-        {/* <!-- End Google Tag Manager (noscript) --> */}
+        
         <Navbar />
         {children}
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
