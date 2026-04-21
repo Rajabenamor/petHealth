@@ -1,0 +1,3 @@
+1. For the main hero image ('A cute cat'), remove `loading="lazy"` and consider adding `fetchpriority='high'`. Ensure it's optimized and appropriately sized.
+2. For other images, use the `srcset` and `sizes` attributes effectively to serve appropriately sized images for different viewports. The current `srcset` is present but could be further optimized for specific breakpoints and image quality.
+3. Ensure images not in the viewport are lazy-loaded (e.g., `loading="lazy"`).
