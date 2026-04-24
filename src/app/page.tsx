@@ -2,7 +2,7 @@ import { Dog, Cat, HospitalIcon, MoveRight, PawPrint } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function home() {
+export default function Home() {
   return (
     <main className="p-6 md:p-10">
       {/* first section */}
@@ -15,7 +15,7 @@ export default function home() {
           </h1>
           <p className="text-lg text-slate-600 leading-relaxed ">
           Paws-itively helpful tech for your favorite furry friends !
-           A guide to animal wellness, symptoms, and nutrition. 
+           A guide to animal wellness, symptoms, and nutrition.
           Built to help pet owners make informed decisions.
           </p>
           <div className="flex gap-4">
@@ -34,7 +34,7 @@ export default function home() {
           </div>
         </div>
 
-   
+
         <div className="flex-1 bg-yellow-50  rounded-3xl p-12 flex justify-center items-center border border-yellow-100">
           <div className="relative w-[350px] h-[250px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
             <Image
@@ -150,11 +150,11 @@ export default function home() {
             </div>
             <div className="mt-5 ml-10 md:mt-6 md:ml-7">
               <h2 className="text-xl font-bold text-amber-900 mb-2">
-                The Hidden Language of Cats: 
+                The Hidden Language of Cats:
               </h2>
               <p className="text-stone-600 text-lg leading-relaxed">
                 Cats may be quiet creatures, but they are constantly...
-                
+
               </p>
               {/* A "Read More" link */}
               <Link
@@ -183,7 +183,7 @@ export default function home() {
               </h2>
               <p className="text-stone-600 text-lg leading-relaxed">
                 It&apos;s natural for cats to shed fur.
-                <br /> We all want a cat who doesn&apos;t leave...
+                <br /> We all want a cat who doesn't leave...
               </p>
               {/* A "Read More" link */}
               <Link
@@ -273,7 +273,7 @@ export default function home() {
                 Common Summer Dangers for Dogs
               </h2>
               <p className="text-stone-600 text-lg leading-relaxed">
-                Dogs may not count down the days and<br/> minutes 
+                Dogs may not count down the days and<br/> minutes
                 until summer begins like...
               </p>
               {/* A "Read More" link */}
@@ -302,7 +302,7 @@ export default function home() {
               </h2>
               <p className="text-stone-600 text-lg leading-relaxed">
                 Dogs can develop heart problems that<br/> lead to heart failure.
-                 
+
               </p>
               {/* A "Read More" link */}
               <Link
