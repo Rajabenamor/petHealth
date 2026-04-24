@@ -2,7 +2,7 @@ import { Dog, Cat, HospitalIcon, MoveRight, PawPrint } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function home() {
+export default function Home() {
   return (
     <main className="p-6 md:p-10">
       {/* first section */}
@@ -183,7 +183,7 @@ export default function home() {
               </h2>
               <p className="text-stone-600 text-lg leading-relaxed">
                 It&apos;s natural for cats to shed fur.
-                <br /> We all want a cat who doesn&apos;t leave...
+                <br /> We all want a cat who doesn't leave...
               </p>
               {/* A "Read More" link */}
               <Link
