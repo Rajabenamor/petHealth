@@ -42,6 +42,7 @@ export default function home() {
               alt="A cute cat"
               fill
               className="object-cover"
+              loading="lazy"
             />
           </div>
         </div>
@@ -85,7 +86,8 @@ export default function home() {
                 src="/assets/catstress.jpg"
                 alt="stressed_cat"
                 fill
-                className="object-fill" // other alternatives { object-contain, object-none,object-cover}
+                className="object-fill"
+                loading="lazy"
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
@@ -115,7 +117,8 @@ export default function home() {
                 src="/assets/catcold.jpg"
                 alt="a cold_cat"
                 fill
-                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+                className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
@@ -145,7 +148,8 @@ export default function home() {
                 src="/assets/catcommunication.png"
                 alt="two beautiful cats"
                 fill
-                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+                className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="mt-5 ml-10 md:mt-6 md:ml-7">
@@ -173,7 +177,8 @@ export default function home() {
                 src="/assets/catfur.jpg"
                 alt="furry_cat"
                 fill
-                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+                className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
@@ -206,7 +211,8 @@ export default function home() {
                 src="/assets/seniordog.jpg"
                 alt="senior_dog"
                 fill
-                className="object-fill" // other alternatives { object-contain, object-none,object-cover}
+                className="object-fill"
+                loading="lazy"
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
@@ -236,7 +242,8 @@ export default function home() {
                 src="/assets/doginfection.jpg"
                 alt="dog_infection"
                 fill
-                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+                className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
@@ -265,7 +272,8 @@ export default function home() {
                 src="/assets/summerdog.png"
                 alt="dog having fun"
                 fill
-                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+                className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
@@ -293,7 +301,8 @@ export default function home() {
                 src="/assets/dogheart.jpg"
                 alt="a cute dog holding a heart"
                 fill
-                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+                className="object-cover"
+                loading="lazy"
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
