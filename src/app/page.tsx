@@ -2,7 +2,7 @@ import { Dog, Cat, HospitalIcon, MoveRight, PawPrint } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function home() {
+export default function Home() {
   return (
     <main className="p-6 md:p-10">
       {/* first section */}
@@ -10,13 +10,12 @@ export default function home() {
         {/* Left Side: Text */}
         <div className="flex-1 space-y-6">
           <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight">
-            Better Care for your{" "}
-            <span className="text-yellow-700">Best Friend.</span>
+            Better Care for your <span className="text-yellow-700">Best Friend.</span>
           </h1>
           <p className="text-lg text-slate-600 leading-relaxed ">
-          Paws-itively helpful tech for your favorite furry friends !
-           A guide to animal wellness, symptoms, and nutrition. 
-          Built to help pet owners make informed decisions.
+            Paws-itively helpful tech for your favorite furry friends ! A guide to
+            animal wellness, symptoms, and nutrition. Built to help pet owners make
+            informed decisions.
           </p>
           <div className="flex gap-4">
             <Link
@@ -34,7 +33,6 @@ export default function home() {
           </div>
         </div>
 
-   
         <div className="flex-1 bg-yellow-50  rounded-3xl p-12 flex justify-center items-center border border-yellow-100">
           <div className="relative w-[350px] h-[250px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
             <Image
@@ -51,28 +49,22 @@ export default function home() {
         {/* Card 1: Dogs */}
         <div className="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:shadow-xl focus-within:shadow-xl transition shadow-sm">
           <Dog className="text-yellow-600 w-10 h-10" />
-          <h3 className="text-xl font-bold mb-2">Canine Wellness</h3>
-          <p className="text-slate-600">
-            From nutrition tips to exercise routines for every breed.
-          </p>
+          <h2 className="text-xl font-bold mb-2">Canine Wellness</h2>
+          <p className="text-slate-600">From nutrition tips to exercise routines for every breed.</p>
         </div>
 
         {/* Card 2: Cats */}
         <div className="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:shadow-xl focus-within:shadow-xl transition shadow-sm">
           <Cat className="text-yellow-600 w-10 h-10" />
-          <h3 className="text-xl font-bold mb-2">Feline Health</h3>
-          <p className="text-slate-600">
-            Understanding cat behavior and common health warning signs.
-          </p>
+          <h2 className="text-xl font-bold mb-2">Feline Health</h2>
+          <p className="text-slate-600">Understanding cat behavior and common health warning signs.</p>
         </div>
 
         {/* Card 3: First Aid */}
         <div className="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:shadow-xl focus-within:shadow-xl transition shadow-sm">
           <HospitalIcon className="text-yellow-600 w-10 h-10" />
-          <h3 className="text-xl font-bold mb-2">Emergency Prep</h3>
-          <p className="text-slate-600">
-            What to do in a pet emergency before you reach the vet.
-          </p>
+          <h2 className="text-xl font-bold mb-2">Emergency Prep</h2>
+          <p className="text-slate-600">What to do in a pet emergency before you reach the vet.</p>
         </div>
       </section>
 
@@ -89,12 +81,10 @@ export default function home() {
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
-              <h2 className="text-xl font-bold text-amber-900 mb-2">
-                Signs your Cat is stressed
-              </h2>
+              <h2 className="text-xl font-bold text-amber-900 mb-2">Signs your Cat is stressed</h2>
               <p className="text-stone-600 text-lg leading-relaxed">
                 Stress is defined as the psychological
-                <br /> and physical strainthat's placed on
+                <br /> and physical strainthat&apos;s placed on
                 <br /> an animal when...
               </p>
               {/* A "Read More" link */}
@@ -119,9 +109,7 @@ export default function home() {
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
-              <h2 className="text-xl font-bold text-amber-900 mb-2">
-                Do Cats Get Cold ?
-              </h2>
+              <h2 className="text-xl font-bold text-amber-900 mb-2">Do Cats Get Cold ?</h2>
               <p className="text-stone-600 text-lg leading-relaxed">
                 As you bundle up in heavier clothes
                 <br /> and winter coats, you might start to
@@ -149,12 +137,9 @@ export default function home() {
               />
             </div>
             <div className="mt-5 ml-10 md:mt-6 md:ml-7">
-              <h2 className="text-xl font-bold text-amber-900 mb-2">
-                The Hidden Language of Cats: 
-              </h2>
+              <h2 className="text-xl font-bold text-amber-900 mb-2">The Hidden Language of Cats:</h2>
               <p className="text-stone-600 text-lg leading-relaxed">
                 Cats may be quiet creatures, but they are constantly...
-                
               </p>
               {/* A "Read More" link */}
               <Link
@@ -210,9 +195,7 @@ export default function home() {
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
-              <h2 className="text-xl font-bold text-amber-900 mb-2">
-                Senior Dog Supplements and Vitamins
-              </h2>
+              <h2 className="text-xl font-bold text-amber-900 mb-2">Senior Dog Supplements and Vitamins</h2>
               <p className="text-stone-600 text-lg leading-relaxed">
                 Caring for senior dogs can be rewarding and
                 <br />
@@ -240,9 +223,7 @@ export default function home() {
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
-              <h2 className="text-xl font-bold text-amber-900 mb-2">
-                Fungal Infections in Dogs You Should Know About
-              </h2>
+              <h2 className="text-xl font-bold text-amber-900 mb-2">Fungal Infections in Dogs You Should Know About</h2>
               <p className="text-stone-600 text-lg leading-relaxed">
                 When you hear that your dog has an infection,
                 <br /> you&apos;re most likely thinking of...
@@ -269,11 +250,10 @@ export default function home() {
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
-              <h2 className="text-xl font-bold text-amber-900 mb-2">
-                Common Summer Dangers for Dogs
-              </h2>
+              <h2 className="text-xl font-bold text-amber-900 mb-2">Common Summer Dangers for Dogs</h2>
               <p className="text-stone-600 text-lg leading-relaxed">
-                Dogs may not count down the days and<br/> minutes 
+                Dogs may not count down the days and
+                <br /> minutes
                 until summer begins like...
               </p>
               {/* A "Read More" link */}
@@ -297,12 +277,10 @@ export default function home() {
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
-              <h2 className="text-xl font-bold text-amber-900 mb-2">
-                Signs of Heart Disease and Heart Failure in Dogs
-              </h2>
+              <h2 className="text-xl font-bold text-amber-900 mb-2">Signs of Heart Disease and Heart Failure in Dogs</h2>
               <p className="text-stone-600 text-lg leading-relaxed">
-                Dogs can develop heart problems that<br/> lead to heart failure.
-                 
+                Dogs can develop heart problems that
+                <br /> lead to heart failure.
               </p>
               {/* A "Read More" link */}
               <Link
