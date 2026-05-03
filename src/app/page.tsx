@@ -78,6 +78,7 @@ export default function home() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto mt-16">
         <section className="space-y-10">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Latest Cat Care Articles</h2>
           {/* Article 1 */}
           <div className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
@@ -89,9 +90,9 @@ export default function home() {
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
-              <h2 className="text-xl font-bold text-amber-900 mb-2">
+              <h3 className="text-xl font-bold text-amber-900 mb-2">
                 Signs your Cat is stressed
-              </h2>
+              </h3>
               <p className="text-stone-600 text-lg leading-relaxed">
                 Stress is defined as the psychological
                 <br /> and physical strainthat's placed on
@@ -119,9 +120,9 @@ export default function home() {
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
-              <h2 className="text-xl font-bold text-amber-900 mb-2">
+              <h3 className="text-xl font-bold text-amber-900 mb-2">
                 Do Cats Get Cold ?
-              </h2>
+              </h3>
               <p className="text-stone-600 text-lg leading-relaxed">
                 As you bundle up in heavier clothes
                 <br /> and winter coats, you might start to
@@ -149,9 +150,9 @@ export default function home() {
               />
             </div>
             <div className="mt-5 ml-10 md:mt-6 md:ml-7">
-              <h2 className="text-xl font-bold text-amber-900 mb-2">
+              <h3 className="text-xl font-bold text-amber-900 mb-2">
                 The Hidden Language of Cats: 
-              </h2>
+              </h3>
               <p className="text-stone-600 text-lg leading-relaxed">
                 Cats may be quiet creatures, but they are constantly...
                 
@@ -177,10 +178,10 @@ export default function home() {
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
-              <h2 className="text-xl font-bold text-amber-900 mb-2">
+              <h3 className="text-xl font-bold text-amber-900 mb-2">
                 Why Is My Cat Losing Hair?
                 <br /> Causes and How to Help
-              </h2>
+              </h3>
               <p className="text-stone-600 text-lg leading-relaxed">
                 It&apos;s natural for cats to shed fur.
                 <br /> We all want a cat who doesn&apos;t leave...
@@ -199,6 +200,7 @@ export default function home() {
 
         {/* dogs Articles */}
         <section className="space-y-10">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Latest Dog Care Articles</h2>
           {/* Article 1 */}
           <div className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
@@ -210,9 +212,9 @@ export default function home() {
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
-              <h2 className="text-xl font-bold text-amber-900 mb-2">
+              <h3 className="text-xl font-bold text-amber-900 mb-2">
                 Senior Dog Supplements and Vitamins
-              </h2>
+              </h3>
               <p className="text-stone-600 text-lg leading-relaxed">
                 Caring for senior dogs can be rewarding and
                 <br />
@@ -240,9 +242,9 @@ export default function home() {
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
-              <h2 className="text-xl font-bold text-amber-900 mb-2">
+              <h3 className="text-xl font-bold text-amber-900 mb-2">
                 Fungal Infections in Dogs You Should Know About
-              </h2>
+              </h3>
               <p className="text-stone-600 text-lg leading-relaxed">
                 When you hear that your dog has an infection,
                 <br /> you&apos;re most likely thinking of...
@@ -269,9 +271,9 @@ export default function home() {
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
-              <h2 className="text-xl font-bold text-amber-900 mb-2">
+              <h3 className="text-xl font-bold text-amber-900 mb-2">
                 Common Summer Dangers for Dogs
-              </h2>
+              </h3>
               <p className="text-stone-600 text-lg leading-relaxed">
                 Dogs may not count down the days and<br/> minutes 
                 until summer begins like...
@@ -297,9 +299,9 @@ export default function home() {
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
-              <h2 className="text-xl font-bold text-amber-900 mb-2">
+              <h3 className="text-xl font-bold text-amber-900 mb-2">
                 Signs of Heart Disease and Heart Failure in Dogs
-              </h2>
+              </h3>
               <p className="text-stone-600 text-lg leading-relaxed">
                 Dogs can develop heart problems that<br/> lead to heart failure.
                  
