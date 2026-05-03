@@ -1,6 +1,12 @@
 import { Dog, Cat, HospitalIcon, MoveRight, PawPrint } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Pet Health Amber: Your Guide to Canine & Feline Wellness",
+  description: "Paws-itively helpful tech for your favorite furry friends! Explore guides on animal wellness, symptoms, and nutrition. Make informed decisions for your pet's health.",
+};
 
 export default function home() {
   return (
