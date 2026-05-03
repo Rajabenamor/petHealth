@@ -51,7 +51,7 @@ export default function home() {
         {/* Card 1: Dogs */}
         <div className="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:shadow-xl focus-within:shadow-xl transition shadow-sm">
           <Dog className="text-yellow-600 w-10 h-10" />
-          <h3 className="text-xl font-bold mb-2">Canine Wellness</h3>
+          <h2 className="text-xl font-bold mb-2">Canine Wellness</h2>
           <p className="text-slate-600">
             From nutrition tips to exercise routines for every breed.
           </p>
@@ -60,7 +60,7 @@ export default function home() {
         {/* Card 2: Cats */}
         <div className="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:shadow-xl focus-within:shadow-xl transition shadow-sm">
           <Cat className="text-yellow-600 w-10 h-10" />
-          <h3 className="text-xl font-bold mb-2">Feline Health</h3>
+          <h2 className="text-xl font-bold mb-2">Feline Health</h2>
           <p className="text-slate-600">
             Understanding cat behavior and common health warning signs.
           </p>
@@ -69,7 +69,7 @@ export default function home() {
         {/* Card 3: First Aid */}
         <div className="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:shadow-xl focus-within:shadow-xl transition shadow-sm">
           <HospitalIcon className="text-yellow-600 w-10 h-10" />
-          <h3 className="text-xl font-bold mb-2">Emergency Prep</h3>
+          <h2 className="text-xl font-bold mb-2">Emergency Prep</h2>
           <p className="text-slate-600">
             What to do in a pet emergency before you reach the vet.
           </p>
