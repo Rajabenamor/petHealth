@@ -1,6 +1,13 @@
 import { Dog, Cat, HospitalIcon, MoveRight, PawPrint } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Pet Health Hub | Expert Advice for Your Furry Friends",
+  description: "Your go-to resource for comprehensive pet health information. Discover guides on dog and cat wellness, nutrition, symptoms, and emergency preparedness. Make informed decisions for your best friend.",
+  keywords: ["pet health", "dog health", "cat health", "pet wellness", "pet nutrition", "pet symptoms", "pet emergency", "animal care", "pet guides", "furry friends"],
+};
 
 export default function home() {
   return (
