@@ -1,6 +1,12 @@
 import { Dog, Cat, HospitalIcon, MoveRight, PawPrint } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Pet Health Guides | Wellness, Symptoms & Nutrition for Dogs & Cats',
+  description: 'Discover comprehensive guides on pet health, symptoms, nutrition, and emergency preparedness for your beloved dogs and cats. Make informed decisions for your furry friends.',
+}
 
 export default function home() {
   return (
