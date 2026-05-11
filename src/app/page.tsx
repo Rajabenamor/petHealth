@@ -1,8 +1,14 @@
 import { Dog, Cat, HospitalIcon, MoveRight, PawPrint } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
 
-export default function home() {
+export const metadata: Metadata = {
+  title: "Pet Health & Wellness | Expert Guides for Cats & Dogs",
+  description: "Paws-itively helpful tech for your furry friends! Explore guides on animal wellness, symptoms, and nutrition to make informed decisions for your pet's health.",
+};
+
+export default function Home() {
   return (
     <main className="p-6 md:p-10">
       {/* first section */}
