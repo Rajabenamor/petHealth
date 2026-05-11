@@ -1,6 +1,12 @@
 import { Dog, Cat, HospitalIcon, MoveRight, PawPrint } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Pawsitively Helpful Pet Care | Guides, Health & Nutrition for Your Best Friend',
+  description: 'Discover expert guides on animal wellness, symptoms, and nutrition for cats and dogs. Make informed decisions for your furry friends with our helpful resources and calorie calculator.',
+};
 
 export default function home() {
   return (
