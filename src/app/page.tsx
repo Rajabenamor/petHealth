@@ -1,6 +1,36 @@
 import { Dog, Cat, HospitalIcon, MoveRight, PawPrint } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Pawsitive Care | Your Guide to Pet Wellness, Symptoms, and Nutrition',
+  description: 'Discover paws-itively helpful tech for your favorite furry friends! A comprehensive guide to animal wellness, symptoms, nutrition, and informed decision-making for pet owners. Explore guides for dogs, cats, and emergency prep.',
+  keywords: ['pet care', 'animal wellness', 'dog health', 'cat health', 'pet nutrition', 'pet symptoms', 'pet first aid', 'pet owners guide', 'dog stress', 'cat cold', 'dog infection', 'senior dog care', 'pet communication'],
+  openGraph: {
+    title: 'Pawsitive Care | Pet Wellness & Health Guides',
+    description: 'A comprehensive guide to animal wellness, symptoms, nutrition, and informed decision-making for pet owners.',
+    url: '/',
+    siteName: 'Pawsitive Care',
+    images: [
+      {
+        url: '/assets/cat.jpg',
+        width: 800,
+        height: 600,
+        alt: 'A cute cat, representing Pawsitive Care for pets',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pawsitive Care | Pet Wellness & Health Guides',
+    description: 'A comprehensive guide to animal wellness, symptoms, nutrition, and informed decision-making for pet owners.',
+    images: ['/assets/cat.jpg'],
+    creator: '@pawsitivecareapp', // Replace with actual Twitter handle if available
+  },
+};
 
 export default function home() {
   return (
@@ -39,7 +69,7 @@ export default function home() {
           <div className="relative w-[350px] h-[250px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/assets/cat.jpg"
-              alt="A cute cat"
+              alt="A cute cat looking inquisitively, representing general pet care"
               fill
               className="object-cover"
             />
@@ -83,9 +113,9 @@ export default function home() {
             <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/catstress.jpg"
-                alt="stressed_cat"
+                alt="A stressed cat showing signs of anxiety, highlighting feline mental health"
                 fill
-                className="object-fill" // other alternatives { object-contain, object-none,object-cover}
+                className="object-fill"
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
@@ -113,9 +143,9 @@ export default function home() {
             <div className="relative sm:w-[220px] h-[190px] md:w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/catcold.jpg"
-                alt="a cold_cat"
+                alt="A cat wrapped comfortably in a blanket, illustrating cat temperature regulation"
                 fill
-                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+                className="object-cover"
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
@@ -143,9 +173,9 @@ export default function home() {
             <div className="relative sm:w-[220px] h-[190px] md:w-[250px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/catcommunication.png"
-                alt="two beautiful cats"
+                alt="Two cats interacting, demonstrating feline body language and communication"
                 fill
-                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+                className="object-cover"
               />
             </div>
             <div className="mt-5 ml-10 md:mt-6 md:ml-7">
@@ -171,9 +201,9 @@ export default function home() {
             <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/catfur.jpg"
-                alt="furry_cat"
+                alt="A furry cat with dense fur, used to illustrate causes of cat hair loss"
                 fill
-                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+                className="object-cover"
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
@@ -204,9 +234,9 @@ export default function home() {
             <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/seniordog.jpg"
-                alt="senior_dog"
+                alt="A calm senior dog, representing care for aging canines"
                 fill
-                className="object-fill" // other alternatives { object-contain, object-none,object-cover}
+                className="object-fill"
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
@@ -234,9 +264,9 @@ export default function home() {
             <div className="relative sm:w-[220px] h-[190px] md:w-[280px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/doginfection.jpg"
-                alt="dog_infection"
+                alt="A dog with a visible skin rash, indicating a fungal infection"
                 fill
-                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+                className="object-cover"
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
@@ -263,9 +293,9 @@ export default function home() {
             <div className="relative sm:w-[220px] h-[190px] md:w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/summerdog.png"
-                alt="dog having fun"
+                alt="A happy dog playing outdoors in summer, illustrating summer safety for dogs"
                 fill
-                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+                className="object-cover"
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
@@ -291,9 +321,9 @@ export default function home() {
             <div className="relative sm:w-[220px] h-[190px] md:w-[280px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/dogheart.jpg"
-                alt="a cute dog holding a heart"
+                alt="A cute dog holding a heart, symbolizing canine heart health and disease prevention"
                 fill
-                className="object-cover" // other alternatives { object-contain, object-none,object-cover}
+                className="object-cover"
               />
             </div>
             <div className="mt-4 ml-10 md:mt-5 md:ml-7">
