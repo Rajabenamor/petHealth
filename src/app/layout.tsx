@@ -27,6 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       <GoogleTagManager gtmId="GTM-P4J6BN54" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
