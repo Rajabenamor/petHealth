@@ -1,6 +1,17 @@
 import { Dog, Cat, HospitalIcon, MoveRight, PawPrint } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  links: [
+    {
+      rel: 'preconnect',
+      href: 'https://pet-health-amber.vercel.app',
+      crossOrigin: "anonymous" // Best practice for preconnect
+    },
+  ],
+};
 
 export default function home() {
   return (
@@ -42,6 +53,8 @@ export default function home() {
               alt="A cute cat"
               fill
               className="object-cover"
+              priority // Mark as high priority for LCP
+              fetchpriority="high" // Explicitly set fetch priority
             />
           </div>
         </div>
