@@ -42,6 +42,8 @@ export default function home() {
               alt="A cute cat"
               fill
               className="object-cover"
+              priority
+              fetchpriority="high"
             />
           </div>
         </div>
