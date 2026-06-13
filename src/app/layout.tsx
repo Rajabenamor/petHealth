@@ -25,13 +25,23 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    'name': 'Pet Health Amber',
+    'url': 'https://pet-health-amber.vercel.app/'
+  };
+
   return (
     <html lang="en">
       <GoogleTagManager gtmId="GTM-P4J6BN54" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Navbar />
         {children}
         <Footer />
