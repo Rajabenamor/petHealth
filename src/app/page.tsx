@@ -79,7 +79,7 @@ export default function home() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto mt-16">
         <section className="space-y-10">
           {/* Article 1 */}
-          <div className="flex flex-col md:flex-row items-center md:items-start">
+          <article className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/catstress.jpg"
@@ -106,10 +106,10 @@ export default function home() {
                 <MoveRight size={15} className="mt-1" />
               </Link>
             </div>
-          </div>
+          </article>
 
           {/* Article 2 */}
-          <div className="flex flex-col md:flex-row items-center md:items-start">
+          <article className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative sm:w-[220px] h-[190px] md:w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/catcold.jpg"
@@ -136,10 +136,10 @@ export default function home() {
                 <MoveRight size={15} className="mt-1" />
               </Link>
             </div>
-          </div>
+          </article>
 
           {/* Article 3 */}
-          <div className="flex flex-col md:flex-row items-center md:items-start">
+          <article className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative sm:w-[220px] h-[190px] md:w-[250px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/catcommunication.png"
@@ -165,9 +165,9 @@ export default function home() {
                 <MoveRight size={15} className="mt-1" />
               </Link>
             </div>
-          </div>
+          </article>
           {/* Article 4 */}
-          <div className="flex flex-col md:flex-row items-center md:items-start">
+          <article className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/catfur.jpg"
@@ -194,13 +194,13 @@ export default function home() {
                 <MoveRight size={15} className="mt-1" />
               </Link>
             </div>
-          </div>
+          </article>
         </section>
 
         {/* dogs Articles */}
         <section className="space-y-10">
           {/* Article 1 */}
-          <div className="flex flex-col md:flex-row items-center md:items-start">
+          <article className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/seniordog.jpg"
@@ -227,10 +227,10 @@ export default function home() {
                 <MoveRight size={15} className="mt-1" />
               </Link>
             </div>
-          </div>
+          </article>
 
           {/* Article 2 */}
-          <div className="flex flex-col md:flex-row items-center md:items-start">
+          <article className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative sm:w-[220px] h-[190px] md:w-[280px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/doginfection.jpg"
@@ -256,10 +256,10 @@ export default function home() {
                 <MoveRight size={15} className="mt-1" />
               </Link>
             </div>
-          </div>
+          </article>
 
           {/* Article 3 */}
-          <div className="flex flex-col md:flex-row items-center md:items-start">
+          <article className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative sm:w-[220px] h-[190px] md:w-[220px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/summerdog.png"
@@ -285,9 +285,9 @@ export default function home() {
                 <MoveRight size={15} className="mt-1" />
               </Link>
             </div>
-          </div>
+          </article>
           {/* Article 4 */}
-          <div className="flex flex-col md:flex-row items-center md:items-start">
+          <article className="flex flex-col md:flex-row items-center md:items-start">
             <div className="relative sm:w-[220px] h-[190px] md:w-[280px] h-[190px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/assets/dogheart.jpg"
@@ -313,7 +313,7 @@ export default function home() {
                 <MoveRight size={15} className="mt-1" />
               </Link>
             </div>
-          </div>
+          </article>
         </section>
       </div>
     </main>
