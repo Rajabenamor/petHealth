@@ -42,6 +42,8 @@ export default function home() {
               alt="A cute cat"
               fill
               className="object-cover"
+              priority // Mark as priority image
+              fetchPriority="high" // Give it high fetch priority
             />
           </div>
         </div>
